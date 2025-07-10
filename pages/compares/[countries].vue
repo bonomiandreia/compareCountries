@@ -30,10 +30,10 @@
         </div>
         <div class="mt-7">
             <h1 class="h2-title-trading-economic flex">
-                {{ $t('pages.compares.currentBalance') }}
+              {{ $t('pages.compares.currentBalance') }}
             </h1>
         </div>
-        <div class="mt-5 mb-5">
+        <div class="mt-5 mb-5" v-if="!listPending && !listError">
             <ChartBalance :countries="selectedCountryDetails" :symbols-query="balanceSymbols"></ChartBalance>
         </div>
       </div>
