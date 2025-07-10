@@ -28,7 +28,7 @@
               :country-data="item"
             />
         </div>
-        <div class="mt-7">
+        <div class="mt-7" v-if="!listPending && !listError">
             <h1 class="h2-title-trading-economic flex">
               {{ $t('pages.compares.currentBalance') }}
             </h1>
