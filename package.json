@@ -1,0 +1,33 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/icon": "^1.15.0",
+    "@nuxtjs/i18n": "^9.5.6",
+    "@nuxtjs/tailwindcss": "^6.13.1",
+    "apexcharts": "^4.7.0",
+    "date-fns": "^4.1.0",
+    "nuxt": "^3.17.6",
+    "nuxt-aos": "^1.2.5",
+    "tradingeconomics-stream": "^0.2.0",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1",
+    "vue3-apexcharts": "^1.8.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.14.0",
+    "@types/node": "^18.11.18",
+    "@types/ws": "^8.18.1",
+    "sass": "^1.89.2",
+    "sass-loader": "^16.0.4"
+  }
+}
