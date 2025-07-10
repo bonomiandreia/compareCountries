@@ -1,9 +1,9 @@
 import { apiFetch as api } from "../utils/apiKey"
-const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)
-  await sleep(60000);
+
   const countrySymbol = query.countrySymbol || 'MEX.BN.CAB.XOKA.CD'
   try {
     const historical = await api<any[]>(`/worldBank/historical?s=${countrySymbol}`)

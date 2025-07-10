@@ -1,7 +1,9 @@
 import { apiFetch as api } from "../utils/apiKey"
+const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 export default defineEventHandler(async (event) => {
   try {
+    await sleep(70000);
     const countriesList = await api<any[]>(`/worldbank/indicator?s=bn.cab.xoka.cd`)
     // const countriesList: any = [];
     return countriesList
